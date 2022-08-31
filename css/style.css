@@ -1,4 +1,5 @@
 @import url(https://fonts.google.com/specimen/Vidaloka?query=vidaloka&preview.size=59&preview.layout=row);
+
 * {
     margin: 0;
     padding: 0;
@@ -8,27 +9,31 @@
 }
 
 
-.hero{
+.hero {
     background-image: url(../img/IMG_5545.jpg);
     height: 60vh;
 }
-h1{
- padding: 40px;
+
+h1 {
+    padding: 40px;
     font-weight: 400;
     font-size: 50px;
-    
+
 }
-.carrusel{
-  margin: 20px;
-  padding: 30px;
-  border-top:solid 3px rgb(241, 217, 185);
-  border-bottom: solid 3px rgb(241, 217, 185)
+
+.carrusel {
+    margin: 20px;
+    padding: 30px;
+    border-top: solid 3px rgb(241, 217, 185);
+    border-bottom: solid 3px rgb(241, 217, 185)
 }
-.formulario{
+
+.formulario {
     padding: 6rem;
-    
+
 }
-.camisaRosa{
+
+.camisaRosa {
     display: inline-flex;
     height: 350px;
     width: 350px;
@@ -36,66 +41,143 @@ h1{
     margin: 10px;
     border-radius: 30px;
 }
-.camisaRosa:hover{
+
+.camisaRosa:hover {
     transform: scale(1.1);
 }
-/* GRID INDEX*/
-.grid{
-    padding: 6rem;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr repeat(auto-fill,minmax(15rem,1fr));
-grid-template-rows: 1fr 1fr;
-grid-template-areas: 
-"item1 item1 item2 item2"
-"item1 item1 item3 item4";
-;
-gap:2rem
 
+/* GRID INDEX*/
+.grid {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr repeat(auto-fill, minmax(15rem, 1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "item1 item1 item2 item2"
+        "item1 item1 item3 item4";
+    ;
+    gap: 2rem
 }
+
 /* IMAGENES GRID*/
-.item{
+.item {
     border-radius: 1rem;
     padding: 2rem;
     background-position: center;
     background-size: cover;
     align-items: center;
 }
-.item:hover{
+
+.item:hover {
     transform: scale(1.1);
 }
-.item1{
+.img_class{
+    padding: 1rem;
+    height: 20em;
+    border-radius: 30px;
+}
+.img_class:hover{
+    transform: scale(1.1);
+}
+
+/*.item1 {
     grid-area: item1;
     background-image: url(../img/camisaBeige.jpg);
-height: 400px;
+    height: 400px;
 }
-.item2{
+
+.item2 {
     grid-area: item2;
     background-image: url(../img/bolsoVerde.jpg);
 }
-.item3{
+
+.item3 {
     grid-area: item3;
     background-image: url(../img/swBlanco.jpg);
 }
-.item4{
+
+.item4 {
     grid-area: item4;
     background-image: url(../img/lentesPrint.jpg);
 }
+
 /*icono whatsapp*/
-.whats{
+.whats {
     position: fixed;
     bottom: 0;
     right: 0;
 }
-footer{
-    border-top: solid 3px rgba(241, 217, 185,0.5);
-}
-@media all and (max-width: 425px){
-    .hero{
-        width: 0vh;
-    }
-    .grid{
-       grid-template-rows: repeat(5,100px);
-       grid-template-columns: repeat(1,100px);
+
+footer {
+    border-top: solid 3px rgba(241, 217, 185, 0.5);
 }
 
+/*@media screen and (max-width: 475px) {
+    .hero {
+        width: 125vh;
+    }
+
+    .alert {
+        width: 125vh;
+    }
+
+    .grid {
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .item {
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    .item1 {
+        height: 100px;
+    }
+
+    .carrusel {
+        height: 135vh;
+        width: 140vw;
+        border-bottom: none 3px rgb(241, 217, 185)
+    }
+
 }
+
+@media screen and (max-width:375px) {
+    .hero {
+        width: 70vh;
+    }
+
+    .alert {
+        width: 70vh;
+    }
+
+    h1 {
+        padding: 40px;
+        font-size: 40px;
+    }
+
+    .carrusel {
+        height: 70vh;
+    }
+
+    .grid {
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .item1 {
+        height: 100px;
+        background-size: cover;
+    }
+
+    h4 {
+        font-size: 12px;
+
+    }
+}*/
