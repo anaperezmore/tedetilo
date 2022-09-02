@@ -68,15 +68,21 @@ h1 {
     align-items: center;
 }
 
+.container {
+    padding: 2rem;
+}
+
 .item:hover {
     transform: scale(1.1);
 }
-.img_class{
+
+.img_class {
     padding: 1rem;
     height: 20em;
     border-radius: 30px;
 }
-.img_class:hover{
+
+.img_class:hover {
     transform: scale(1.1);
 }
 

@@ -1,0 +1,8 @@
+@import "./partials/variables"; //siempre arriba de todo//
+
+@import "./partials/reset"; //siempre abajo de las variables, arriba del resto//
+
+@import "./partials/hero.scss";
+@import "./partials/carousel";
+@import "./partials/img";
+@import "./partials/footer";
