@@ -7,3 +7,14 @@ footer {
         right: 0;
     }
 }
+
+$redes: (
+    facebook: blue,
+    instagram: rgb(255, 255, 85)
+);
+@each $redsocial,$colordered in $redes {
+    .fa-#{$redsocial}{
+        background-color: $colordered;
+    }
+    
+}

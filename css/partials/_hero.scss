@@ -3,9 +3,13 @@
     height: 60vh;
 
     h1 {
+        -webkit-animation:fade-in 1.2s;
+        animation:fade-in 1.2s;
         padding: 40px;
         font-weight: 400;
         font-size: 50px;
     
     }
 }
+ @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+ @keyframes fade-in{0%{opacity:0}100%{opacity:1}}
