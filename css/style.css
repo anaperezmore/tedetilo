@@ -7,7 +7,9 @@
     font-family: "vidaloka";
 
 }
-
+body{
+    background-color: rgb(255, 255, 247);
+}
 
 .hero {
     background-image: url(../img/IMG_5545.jpg);
@@ -20,13 +22,19 @@ h1 {
     font-size: 50px;
 
 }
-
+h2{
+    margin: 0px 0px 8px;
+    margin-top: 15px;
+    text-align: center;
+    background-color:rgb(241, 217, 185);
+}
 .carrusel {
-    margin: 20px;
+    margin: 10px;
     padding: 30px;
     border-top: solid 3px rgb(241, 217, 185);
-    border-bottom: solid 3px rgb(241, 217, 185)
+   
 }
+/* ESTILO PRODUCTO */
 
 .formulario {
     padding: 6rem;
@@ -46,44 +54,38 @@ h1 {
     transform: scale(1.1);
 }
 
-/* GRID INDEX*/
-.grid {
-    padding: 6rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr repeat(auto-fill, minmax(15rem, 1fr));
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-        "item1 item1 item2 item2"
-        "item1 item1 item3 item4";
-    ;
-    gap: 2rem
-}
-
-/* IMAGENES GRID*/
-.item {
-    border-radius: 1rem;
-    padding: 2rem;
-    background-position: center;
-    background-size: cover;
-    align-items: center;
-}
-
 .container {
-    padding: 2rem;
-}
-
-.item:hover {
-    transform: scale(1.1);
-}
-
-.img_class {
     padding: 1rem;
+}
+.img_class {
     height: 20em;
-    border-radius: 30px;
+    border-radius: 0px;
+    display:inline-flex;
+    background-size: cover;    
+    
+}
+.card-title{
+    text-align: center;
 }
 
+.card{
+    display: flex;
+    max-width: 100%;
+    gap: 1rem;
+}
+.card-img-top{
+    height: 210px;
+    width: 210px;
+    max-width: 100%;
+}
+.card-body{
+    height: 300px;
+}
+.card-text{
+    color: rgb(152, 226, 163);
+}
 .img_class:hover {
-    transform: scale(1.1);
+    transform: scale(1,1);
 }
 
 /*icono whatsapp*/
@@ -94,5 +96,8 @@ h1 {
 }
 
 footer {
+    padding: 3rem;
+ text-align: left;
     border-top: solid 3px rgba(241, 217, 185, 0.5);
+    
 }
