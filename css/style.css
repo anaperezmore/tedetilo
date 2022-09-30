@@ -7,7 +7,10 @@
     font-family: "vidaloka";
 
 }
-body{
+.navbar-brand{
+    color: rgb(250, 198, 129);
+}
+body {
     background-color: rgb(255, 255, 247);
 }
 
@@ -22,82 +25,165 @@ h1 {
     font-size: 50px;
 
 }
-h2{
+
+h2 {
     margin: 0px 0px 8px;
     margin-top: 15px;
     text-align: center;
-    background-color:rgb(241, 217, 185);
+    background-color: rgb(241, 217, 185);
 }
+
 .carrusel {
     margin: 10px;
-    padding: 30px;
-    border-top: solid 3px rgb(241, 217, 185);
-   
+    padding: 20px;
+    border-bottom: solid 3px rgb(241, 217, 185);
+
 }
+
 /* ESTILO PRODUCTO */
 
 .formulario {
     padding: 6rem;
+    
 
-}
-
-.camisaRosa {
-    display: inline-flex;
-    height: 350px;
-    width: 350px;
-    padding: 1rem;
-    margin: 10px;
-    border-radius: 30px;
-}
-
-.camisaRosa:hover {
-    transform: scale(1.1);
 }
 
 .container {
     padding: 1rem;
 }
+
 .img_class {
     height: 20em;
     border-radius: 0px;
-    display:inline-flex;
-    background-size: cover;    
-    
-}
-.card-title{
-    text-align: center;
+    display: inline-flex;
+    background-size: cover;
+
 }
 
-.card{
+.card-title {
+    text-align: center;
+    font-size: small;
+}
+
+.card {
     display: flex;
     max-width: 100%;
     gap: 1rem;
 }
-.card-img-top{
+
+.card-img-top {
     height: 210px;
     width: 210px;
     max-width: 100%;
-}
-.card-body{
-    height: 300px;
-}
-.card-text{
-    color: rgb(152, 226, 163);
-}
-.img_class:hover {
-    transform: scale(1,1);
+    margin: 0;
 }
 
-/*icono whatsapp*/
+.card-body {
+    height: 300px;
+}
+
+.card-text {
+    color: black;
+}
+
+.img_class:hover {
+    transform: scale(1, 1);
+}
+
+/*CAMISAS*/
+.camisas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    margin: 50px
+}
+
+/*ICONOS Y FOOTER*/
 .whats {
     position: fixed;
     bottom: 0;
     right: 0;
 }
 
+.iconos {
+    
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    display:inline-block;
+    
+}
+
+.pie {
+    
+    margin-left: 22em;
+   
+}
+
+.linea {
+    color: rgba(242, 218, 187, 0.5);
+    height: 3px;
+}
+.logo{
+    display: inline-flex;
+    align-content:space-around;
+    height: 250px;
+    width: 250px;
+    
+    margin: 10px;
+   
+    vertical-align: middle;
+}
+.redes{
+    display: flex;
+
+    align-content: center;
+    justify-content: center;
+    
+}
+.contacto{
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+   
+}
+
 footer {
-    padding: 3rem;
- text-align: left;
-    border-top: solid 3px rgba(241, 217, 185, 0.5);
+    /*padding: 1rem;*/
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 450;
+    background-color: white;
+    /*margin: 0;*/
+}
+@media screen and (max-width: 768px){
+    .camisas{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+    .pie{
+        margin-left: 12em;
+    }
+}
+@media screen and (max-width: 576px){
+    .camisas{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .pie{
+        margin-left: 3em;
+        font-size: 14px;
+    }
+
+    
+}
+@media screen and (max-width:320px){
+    .pie{
+        margin-left: 30px;
+        font-size: 12px;
+    }
     
 }
